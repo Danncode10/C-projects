@@ -61,68 +61,109 @@ void withdraw(){
 }
 
 void changePin(){
-    
-}
-
-
-void showMenu(){
-    char choice;
+    int old = 0;
+    int newPin = 0;
+    int confirm;
     bool running = true;
+    int tries = 3;
     
     while(running){
-        cout << "B - Show balance\n"
-        << "D - Deposit\n"
-        << "W - Withdraw\n"
-        << "C - Change Pin\n"
-        << "X - Exit\n\nYour Choice: " << endl;
-        cin >> choice;
-        
-        switch(choice){
-            case 'B' : case 'b': showBalance();
-                break;
-            case 'D' : case 'd': deposit();
-                break;
-            case 'W' : case 'w': withdraw();
-                break;
-            case 'C' : case 'c': changePin();
-                break;
-            case 'X' : case 'x':
-                cout << "Thank you for using this program..." << endl;
-                exit(0);
-            default:
-                cout << "Invalid Key!" << endl;
-                running = true;
+        cout << "Enter Old Pin: ";
+            cin >> old;
+        if(old == pin){
+            running = false;
         }
+        else{
+            running = true;
+            tries--;
+            if(tries == 0){
+                cout << "Too many Tries! Program terminated..." << endl;
+                exit(0);
+            }
+            else{
+                cout << "Wrong Pin ! You have " << tries << " tries left. " << endl;
+            }
+        }
+    }
+    
+    while(true){
+        cout << "Enter New Pin: ";
+        cin >> newPin;
+        cout << "Confirm Pin: ";
+        cin >> confirm;
+        
+            if(newPin == confirm){
+                pin = newPin;
+                break;
+            }
+            else{
+                cout << "Pin does not match" << endl;
+            }
     }
 }
 
-bool again(){
+
+bool again() {
     char ans;
-    cout << "Would You like to run the program again? (y/n)";
-    cin >> ans;
     
-    while(true){
-        switch(ans){
-            case 'y': return true;
-                break;
-            case 'n': return false;
-                break;
+    while (true) {
+        cout << "Would You like to run the program again? (y/n): ";
+        cin >> ans;
+
+        switch (ans) {
+            case 'y': case 'Y':
+                return true;
+            case 'n': case 'N':
+                cout << "Thank you for using this program..." << endl;
+                return false;
             default:
                 cout << "Invalid Input! " << endl;
         }
     }
 }
 
-int main(){
+void showMenu(){
+    char choice;
     bool running = true;
     
-    enterPin();
-    while(running){
-        showMenu();
+        while(running){
+            cout << "B - Show balance\n"
+            << "D - Deposit\n"
+            << "W - Withdraw\n"
+            << "C - Change Pin\n"
+            << "X - Exit\n\nYour Choice: ";
+            cin >> choice;
+            
+            switch(choice){
+                case 'B' : case 'b': showBalance();
+                    running = false;
+                    break;
+                case 'D' : case 'd': deposit();
+                    running = false;
+                    break;
+                case 'W' : case 'w': withdraw();
+                    running = false;
+                    break;
+                case 'C' : case 'c': changePin();
+                    running = false;
+                    break;
+                case 'X' : case 'x':
+                    cout << "Thank you for using this program..." << endl;
+                    exit(0);
+                default:
+                    cout << "Invalid Key!" << endl;
+                    running = true;
+            }
         running = again();
-        
+            
     }
-    cout << "Thank you for using this program..." << endl;
-    cin.get();
+}
+
+
+int main(){
+    
+    enterPin();
+    showMenu();
+    
     return 0;
 }
