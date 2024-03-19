@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1E27AAB2BA87542000790A2 /* Wrong kay mam NIlda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E27AA92BA874B9000790A2 /* Wrong kay mam NIlda.cpp */; };
+		D19A88082BA9CEC4008B81F3 /* 44. Quiz gane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19A88022BA9C7F5008B81F3 /* 44. Quiz gane.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +33,10 @@
 		D177664A2BA5BB70007AEF52 /* 43.1 Random Number in Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "43.1 Random Number in Array.hpp"; sourceTree = "<group>"; };
 		D177664D2BA5C44E007AEF52 /* 43.2 Fill Array with non-repeating random numbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "43.2 Fill Array with non-repeating random numbers.cpp"; sourceTree = "<group>"; };
 		D177664E2BA5C44E007AEF52 /* 43.2 Fill Array with non-repeating random numbers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "43.2 Fill Array with non-repeating random numbers.hpp"; sourceTree = "<group>"; };
+		D19A88022BA9C7F5008B81F3 /* 44. Quiz gane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "44. Quiz gane.cpp"; sourceTree = "<group>"; };
+		D19A88032BA9C7F5008B81F3 /* 44. Quiz gane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "44. Quiz gane.hpp"; sourceTree = "<group>"; };
+		D19A88052BA9CE11008B81F3 /* 44. By Bro COde - Quiz gane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "44. By Bro COde - Quiz gane.cpp"; sourceTree = "<group>"; };
+		D19A88062BA9CE11008B81F3 /* 44. By Bro COde - Quiz gane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "44. By Bro COde - Quiz gane.hpp"; sourceTree = "<group>"; };
 		D1E27AA92BA874B9000790A2 /* Wrong kay mam NIlda.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Wrong kay mam NIlda.cpp"; sourceTree = "<group>"; };
 		D1E27AAA2BA874B9000790A2 /* Wrong kay mam NIlda.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Wrong kay mam NIlda.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +55,11 @@
 		D177662E2BA5A91F007AEF52 = {
 			isa = PBXGroup;
 			children = (
+				D19A88052BA9CE11008B81F3 /* 44. By Bro COde - Quiz gane.cpp */,
+				D19A88062BA9CE11008B81F3 /* 44. By Bro COde - Quiz gane.hpp */,
 				D1E27AA92BA874B9000790A2 /* Wrong kay mam NIlda.cpp */,
+				D19A88022BA9C7F5008B81F3 /* 44. Quiz gane.cpp */,
+				D19A88032BA9C7F5008B81F3 /* 44. Quiz gane.hpp */,
 				D1E27AAA2BA874B9000790A2 /* Wrong kay mam NIlda.hpp */,
 				D177664D2BA5C44E007AEF52 /* 43.2 Fill Array with non-repeating random numbers.cpp */,
 				D177664E2BA5C44E007AEF52 /* 43.2 Fill Array with non-repeating random numbers.hpp */,
@@ -139,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E27AAB2BA87542000790A2 /* Wrong kay mam NIlda.cpp in Sources */,
+				D19A88082BA9CEC4008B81F3 /* 44. Quiz gane.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
