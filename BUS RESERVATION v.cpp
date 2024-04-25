@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-class {
-public:
-
 //global variable
 string x[2][20] = {
     {
@@ -139,8 +136,6 @@ bool pagPuno(){
     }
     return true;// ibigsabihin na execute lahat
 }
-
-};
 
 
 int main(){
